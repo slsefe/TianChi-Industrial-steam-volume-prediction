@@ -2,7 +2,7 @@
 ## competition introduction
 home page[https://tianchi.aliyun.com/getStart/introduction.htm?spm=5176.100066.0.0.518433af95U5St&raceId=231693]
 
-## submot log
+## submit log
 note: all the submit file were upload
 - 10.16, lasso regression, all data&feature, online MSE:2.1002
 - 10.18, linear regression, all data&feature, online MSE:3.2806
