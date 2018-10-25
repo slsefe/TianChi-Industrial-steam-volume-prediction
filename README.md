@@ -7,7 +7,10 @@ note: all the submit file were upload
 - 10.16, lasso regression, all data&feature, online MSE:2.1002
 - 10.18, linear regression, all data&feature, online MSE:3.2806
 - 10.21, epsilon-SVR, all data&feature, offline MSE:0.1011, online MSE:0.9632
-- 10.21, lightGBM, all data&feature, offline MSE:0.1033, online MSE:0.1496
+- 10.21, lightGBM
+  - all data&feature
+  - offline MSE:0.1033
+  - online MSE:0.1496
 - 10.22, xgboost, all data&feature, offline MSE:0.0914, online MSE:0.2566
 - 10.23 10:21, lightGBM, 
   - drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'
@@ -18,12 +21,12 @@ note: all the submit file were upload
     - RMSE:0.3218163467167717
     - median_AE:0.16902948021234104
     - R2:0.8961636957276298
-   - online result:
-    - MSE:0.1341
+  - online result:
+    - MSE:0.1341, 目前线上最好成绩
 - 10.23 19:04, lightGBM
   - drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'
   - hyperparameters optimize
-  - drop abnormal data on train set according to sns.boxplot
+  - **drop abnormal data on train set according to sns.boxplot**
   - offline result:
     - MAE:0.22386904412869685
     - MSE:0.09175053278155469
@@ -45,3 +48,15 @@ note: all the submit file were upload
     - R2:0.8815880491259325
   - online result:
     - MSE:0.1502
+- 10.25, lightGBM
+  - **构造二项式特征**
+  - **标准化**
+  - simple hyperparameters optimize
+  - offline result:
+    - MAE:0.23509398392283998
+    - MSE:0.10684498889063529
+    - RMSE:0.32687151740498177
+    - median_AE:0.16469461865666898
+    - R2:0.8928759015741464
+  - online result:
+    - MSE:0.1549
