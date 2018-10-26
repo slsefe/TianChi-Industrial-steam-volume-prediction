@@ -4,59 +4,23 @@ home page[https://tianchi.aliyun.com/getStart/introduction.htm?spm=5176.100066.0
 
 ## submit log
 note: all the submit file were upload
-- 10.16, lasso regression, all data&feature, online MSE:2.1002
-- 10.18, linear regression, all data&feature, online MSE:3.2806
-- 10.21, epsilon-SVR, all data&feature, offline MSE:0.1011, online MSE:0.9632
-- 10.21, lightGBM
-  - all data&feature
-  - offline MSE:0.1033
-  - online MSE:0.1496
-- 10.22, xgboost, all data&feature, offline MSE:0.0914, online MSE:0.2566
-- 10.23 10:21, lightGBM, 
-  - drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'
-  - hyperparameters optimize
-  - offline result:
-    - MAE:0.23018598427355388
-    - MSE:0.10356576101412938
-    - RMSE:0.3218163467167717
-    - median_AE:0.16902948021234104
-    - R2:0.8961636957276298
-  - online result:
-    - MSE:0.1341, 目前线上最好成绩
-- 10.23 19:04, lightGBM
-  - drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'
-  - hyperparameters optimize
-  - **drop abnormal data on train set according to sns.boxplot**
-  - offline result:
-    - MAE:0.22386904412869685
-    - MSE:0.09175053278155469
-    - RMSE:0.3029035040760583
-    - median_AE:0.15808274071025233
-    - R2:0.8139535621816923
-  - online result:
-    - MSE:0.2548
-- 10.23, lightGBM
-  - drop abnormal feature: 'V9','V23','V25','V30','V31','V33','V34'
-  - drop bilinear feature: 'V0','V6','V15','V10','V8','V27'
-  - hyperparameters optimize
-  - **not drop abnormal data on train set according to sns.boxplot**
-  - offline result:
-    - MAE:0.24648279890093366
-    - MSE:0.1181034310819909
-    - RMSE:0.3436617975306404
-    - median_AE:0.1819716207792185
-    - R2:0.8815880491259325
-  - online result:
-    - MSE:0.1502
-- 10.25, lightGBM
-  - **构造二项式特征**
-  - **标准化**
-  - simple hyperparameters optimize
-  - offline result:
-    - MAE:0.23509398392283998
-    - MSE:0.10684498889063529
-    - RMSE:0.32687151740498177
-    - median_AE:0.16469461865666898
-    - R2:0.8928759015741464
-  - online result:
-    - MSE:0.1549
+
+|time|method||offline MSE|offline R2|online MSE|状态|
+|---|---|---|---|---|---|---|
+|10.21|lightGBM|all features|0.1033||0.1496|little overfitting|
+|10.22|xgboost|all features|0.0914||0.2566|strong overfitting|
+|10.23|lightGBM|1.drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'; 2.hyperparameters optimize|0.1035|0.8961|0.1341|weak overfitting|
+|10.23|lightGBM|1.drop abnormal feature 'V9','V23','V25','V30','V31','V33','V34'; 2.hyperparameters optimize; 3.drop abnormal data on train set according to sns.boxplot|0.0917|0.8139|0.2548|middle overfitting|
+|10.24|lightGBM|1.drop abnormal feature: 'V9','V23','V25','V30','V31','V33','V34'; 2.drop bilinear feature: 'V0','V6','V15','V10','V8','V27'; 3.hyperparameters optimize|0.1181|0.8815|0.1502|weak overfitting|
+|10.25|lightGBM|1.构造二项式特征780个; 2.标准化|0.1068|0.8928|0.1549|weak overfitting|
+|10.25|lightGBM|1.构造二项式特征780个; 2.PCA降维到100个|0.1871|0.8123|0.5202|strongly overfitting|
+|10.26|LightGBM|f-regression 选择20个特征|0.1040|0.8957|0.1417|weak overfitting|
+
+## summary:
+- do not need too many features, maybe about 25 is a accepted value. 
+- must drop abnormal-distributed features, such as 'V9'
+- drop abnormal samples on train set will lead to heavily overfitting, so how to deal with these data is critical
+- can't simplily drop bilinear features, which will decrease the appearance while weaken overfitting, maybe PCA is a better method
+- constract many features and then use PCA on all features is a terrible try, maybe use PCA only on bilinear features is better
+- use f-regression to select KBest features looks like effective, maybe combine with PCA will work better
+- looks like the R2 metric stands for the ability of overcoming overfitting in some way
