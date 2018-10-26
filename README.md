@@ -15,6 +15,7 @@ note: all the submit file were upload
 |10.25|lightGBM|1.构造二项式特征780个; 2.标准化|0.1068|0.8928|0.1549|weak overfitting|
 |10.25|lightGBM|1.构造二项式特征780个; 2.PCA降维到100个|0.1871|0.8123|0.5202|strongly overfitting|
 |10.26|LightGBM|f-regression 选择20个特征|0.1040|0.8957|0.1417|weak overfitting|
+|10.26|LightGBM|1.构造二项式特征780个; 2.f-regression选择100个特征; 3.PCA降维到30个|0.1365|0.8630|0.1417||
 
 ## summary:
 - do not need too many features, maybe about 25 is a accepted value. 
