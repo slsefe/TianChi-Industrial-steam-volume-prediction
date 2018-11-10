@@ -62,6 +62,18 @@ note: all the submit file were upload
 |2|0.1638|0.8293|0.1893|0.8101|||||||
 |1|0.2040|0.7875|0.2345|0.7648|||||||
 
+### features engineering and features selection
+|model|drop abnormal data|one-hot|add min|log|exp|sqrt|square|poly|drop abnormal feature|select KBest|pca|train mse|valid mse|test mse|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|lgb|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|lgb|True,whi=3|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|lgb|-|-|-|-|-|-|-|-|True|-|-|-|-|-|
+|lgb|-|-|-|-|-|-|-|-|-|True,35|-|-|-|-|
+|lgb|True,whi=3|-|-|-|-|-|-|-|True|-|-|-|-|-|
+|lgb|True,whi=3|true|true|true|true|true|true|false|true|30|false|0.1082|0.1384||
+|lgb|True,3|true|true|true|true|true|true|false|true|30|false||||
+
+
 
 ## summary:
 - do not need too many features, maybe about 25 is a accepted value. 
