@@ -1,6 +1,6 @@
 # TianChi-Industrial-steam-volume-prediction
 ## competition introduction
-home page[https://tianchi.aliyun.com/getStart/introduction.htm?spm=5176.100066.0.0.518433af95U5St&raceId=231693]
+[home page](https://tianchi.aliyun.com/getStart/introduction.htm?spm=5176.100066.0.0.518433af95U5St&raceId=231693)
 
 ## submit log
 note: all the submit file were upload
@@ -65,7 +65,7 @@ note: all the submit file were upload
 ### features engineering and features selection
 |model|drop abnormal data|one-hot|add min|log|exp|sqrt|square|poly|drop abnormal feature|select KBest|pca|train mse|valid mse|test mse|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|lgb|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|lgb|-|-|-|-|-|-|-|-|-|-|-|0.0179|0.1028|-|
 |lgb|True,whi=3|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |lgb|-|-|-|-|-|-|-|-|True|-|-|-|-|-|
 |lgb|-|-|-|-|-|-|-|-|-|True,35|-|-|-|-|
