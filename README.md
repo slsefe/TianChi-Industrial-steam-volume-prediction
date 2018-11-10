@@ -66,9 +66,9 @@ note: all the submit file were upload
 |model|drop abnormal data|one-hot|add min|log|exp|sqrt|square|poly|drop abnormal feature|select KBest|pca|train mse|valid mse|test mse|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |lgb|-|-|-|-|-|-|-|-|-|-|-|0.0179|0.1028|-|
-|lgb|True,whi=3|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|lgb|-|-|-|-|-|-|-|-|True|-|-|-|-|-|
-|lgb|-|-|-|-|-|-|-|-|-|True,35|-|-|-|-|
+|lgb|True,whi=3|-|-|-|-|-|-|-|-|-|-|0.0185|0.1036|-|
+|lgb|-|-|-|-|-|-|-|-|True|-|-|0.0182|0.1029|-|
+|lgb|-|-|-|-|-|-|-|-|-|True,35|-|0.0189|0.1037|-|
 |lgb|True,whi=3|-|-|-|-|-|-|-|True|-|-|-|-|-|
 |lgb|True,whi=3|true|true|true|true|true|true|false|true|30|false|0.1082|0.1384||
 |lgb|True,3|true|true|true|true|true|true|false|true|30|false||||
