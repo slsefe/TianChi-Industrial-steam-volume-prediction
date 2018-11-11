@@ -63,15 +63,15 @@ note: all the submit file were upload
 |1|0.2040|0.7875|0.2345|0.7648|||||||
 
 ### features engineering and features selection
-|model|drop data|one hot|add min|log|exp|sqrt|square|poly|drop fea|select KBest|pca|train mse|valid mse|vaid R2|test mse|
+|model|drop data|one hot|add min|log|exp|sqrt|squa|poly|drop fea|select KBest|pca|train mse|valid mse|vaid R2|test mse|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |lgb|-|-|-|-|-|-|-|-|-|-|-|0.0182|0.1030|0.8968|-|
 |lgb|True,3|-|-|-|-|-|-|-|-|-|-|0.0119|0.0999|0.828|-|
 |lgb|-|-|-|-|-|-|-|-|True|-|-|0.0192|0.1058|0.8939|-|
-|lgb|-|-|-|-|-|-|-|-|-|True,35|-|0.0189|0.1037|0.8960|-|
+|lgb|-|-|-|-|-|-|-|-|-|35|-|0.0189|0.1037|0.8960|-|
 |lgb|True,3|-|-|-|-|-|-|-|True|-|-|0.0131|0.0993|0.8292|-|
-|lgb|-|-|-|-|-|-|-|-|True|True,28|-|0.0207|0.1061|0.8936|-|
-|lgb|True,3|-|-|-|-|-|-|-|-|True,30|-|0.0140|0.1007|0.8269|-|
+|lgb|-|-|-|-|-|-|-|-|True|28|-|0.0207|0.1061|0.8936|-|
+|lgb|True,3|-|-|-|-|-|-|-|-|30|-|0.0140|0.1007|0.8269|-|
 |lgb|-|True|-|-|-|-|-|-|-|-|-|0.0179|0.1035|0.8962|-|
 |lgb|-|-|True|-|-|-|-|-|-|-|-|0.0181|0.1042|0.8955|-|
 |lgb|-|True|True|-|-|-|-|-|-|-|-|0.0178|0.1024|0.8973|0.1264|
@@ -79,19 +79,19 @@ note: all the submit file were upload
 |lgb|True|True|True|-|-|-|-|-|-|-|-|0.0180|0.1035|0.8962|-|
 |lgb|True|True|True|-|-|-|-|-|True|-|-|0.0195|0.1052|0.8945|-|
 |lgb|-|True|True|-|-|-|-|-|True|-|-|0.0189|0.1046|0.8951|-|
-|lgb|-|True|True|-|-|-|-|-|True|True,50|-|0.0208|0.1056|0.8940|-|
-|lgb|-|True|True|-|-|-|-|-|True|True,25|-|0.0241|0.1075|0.8922|-|
+|lgb|-|True|True|-|-|-|-|-|True|50|-|0.0208|0.1056|0.8940|-|
+|lgb|-|True|True|-|-|-|-|-|True|25|-|0.0241|0.1075|0.8922|-|
 |lgb|-|True|True|True|True|True|True|-|True|-|-|0.0148|0.1084|0.8913|-|
-|lgb|-|True|True|True|True|True|True|-|True|True,50|-|0.0540|0.1139|0.8858|-|
-|lgb|-|True|True|True|True|True|True|-|True|True,30|-|0.1066|0.1371|0.8626|-|
-|lgb|-|True|True|True|True|True|True|-|True|True,16|-|0.1268|0.1638|0.8358|-|
-|lgb|-|True|True|True|True|True|True|True|True|True,100|-|0.0641|0.1332|0.8665|-|
-|lgb|-|True|True|True|True|True|True|True|True|True,30|-|0.1066|0.1457|0.8539|-|
-|lgb|-|True|True|True|True|True|True|True|True|-|True,30|0.0309|0.1486|0.8510|-|
-|lgb|-|True|True|True|True|True|True|True|True|True,400|True,20|0.0546|0.1195|0.8802|-|
-|lgb|-|True|True|True|True|True|True|True|True|True,100|True,30|0.0264|0.1221|0.8775|-|
-|lgb|-|True|True|True|True|True|True|True|True|True,100|True,20|0.0352|0.1271|0.8725|-|
-|lgb|True,3|true|true|true|true|true|true|-|true|True,30|-|0.1082|0.1384|-|
+|lgb|-|True|True|True|True|True|True|-|True|50|-|0.0540|0.1139|0.8858|-|
+|lgb|-|True|True|True|True|True|True|-|True|30|-|0.1066|0.1371|0.8626|-|
+|lgb|-|True|True|True|True|True|True|-|True|16|-|0.1268|0.1638|0.8358|-|
+|lgb|-|True|True|True|True|True|True|True|True|100|-|0.0641|0.1332|0.8665|-|
+|lgb|-|True|True|True|True|True|True|True|True|30|-|0.1066|0.1457|0.8539|-|
+|lgb|-|True|True|True|True|True|True|True|True|-|30|0.0309|0.1486|0.8510|-|
+|lgb|-|True|True|True|True|True|True|True|True|400|20|0.0546|0.1195|0.8802|-|
+|lgb|-|True|True|True|True|True|True|True|True|100|30|0.0264|0.1221|0.8775|-|
+|lgb|-|True|True|True|True|True|True|True|True|100|20|0.0352|0.1271|0.8725|-|
+|lgb|True,3|true|true|true|true|true|true|-|true|30|-|0.1082|0.1384|-|
 
 
 
