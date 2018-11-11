@@ -63,7 +63,7 @@ note: all the submit file were upload
 |1|0.2040|0.7875|0.2345|0.7648|||||||
 
 ### features engineering and features selection
-|model|drop ab data|one-hot|add min|log|exp|sqrt|square|poly|drop abnormal fea|selectKBest|pca|train mse|valid mse|vaid R2|test mse|
+|model|drop data|one hot|add min|log|exp|sqrt|square|poly|drop fea|select KBest|pca|train mse|valid mse|vaid R2|test mse|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |lgb|-|-|-|-|-|-|-|-|-|-|-|0.0182|0.1030|0.8968|-|
 |lgb|True,whi=3|-|-|-|-|-|-|-|-|-|-|0.0119|0.0999|0.828|-|
@@ -74,7 +74,7 @@ note: all the submit file were upload
 |lgb|True,whi=3|-|-|-|-|-|-|-|-|True,30|-|0.0140|0.1007|0.8269|-|
 |lgb|-|True|-|-|-|-|-|-|-|-|-|0.0179|0.1035|0.8962|-|
 |lgb|-|-|True|-|-|-|-|-|-|-|-|0.0181|0.1042|0.8955|-|
-|lgb|-|True|True|-|-|-|-|-|-|-|-|0.0178|0.1024|0.8973|-|
+|lgb|-|True|True|-|-|-|-|-|-|-|-|0.0178|0.1024|0.8973|0.1264|
 |lgb|-|True|True|-|-|-|-|-|True|-|-|0.0189|0.1046|0.8951|-|
 |lgb|True|True|True|-|-|-|-|-|-|-|-|0.0180|0.1035|0.8962|-|
 |lgb|True|True|True|-|-|-|-|-|True|-|-|0.0195|0.1052|0.8945|-|
