@@ -190,9 +190,9 @@ def train_model(X_train, y_train, X_test, submit_dir, test_ratio=0.2, seed=2019,
     pd.Series(lasso_model.predict(X_test)).to_csv(submit_file,index = False)
 
 
-train_file = 'd:/zhengqi/zhengqi_train.txt'
-test_file = 'd:/zhengqi/zhengqi_test.txt'
-submit_dir = 'd:/zhengqi/'
+train_file = './data/zhengqi_train.txt'
+test_file = './data/zhengqi_test.txt'
+submit_dir = './submit/'
 train_df,test_df = read_data(train_file,test_file)
 X_train,y_train,X_test = feature_engineering(train_df,test_df)
 train_model(X_train,y_train,X_test,submit_dir=submit_dir)
