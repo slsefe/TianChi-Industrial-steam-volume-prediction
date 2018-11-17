@@ -76,6 +76,7 @@ note: all the submit file were upload
 |lgb|-|True,drop|-|-|-|-|-|-|-|-|-|0.0112|0.1051|0.8947|0.1284|
 |lgb|-|-|True|-|-|-|-|-|-|-|-|0.0174|0.1041|0.8957|14.1|
 |lgb|-|True|True|-|-|-|-|-|-|-|-|0.0178|0.1024|0.8973|0.1264|
+|lgb|-|True|True|-|-|-|-|-|-|-|-|0.0013|0.1008|0.8989||
 |lgb|-|True|True|-|-|-|-|-|True|-|-|0.0189|0.1046|0.8951|0.1276|
 |lgb|True|True|True|-|-|-|-|-|-|-|-|0.0180|0.1035|0.8962|0.1285|
 |lgb|True|True|True|-|-|-|-|-|True|-|-|0.0195|0.1052|0.8945|-|
@@ -88,6 +89,7 @@ note: all the submit file were upload
 |lgb|-|-|-|-|-|-|True|-|-|-|-|0.0146|0.1068|0.8929|14.2|
 |lgb|-|-|-|True|True|True|True|-|-|-|-|0.0170|0.1049|0.8948|14.2|
 |lgb|-|True|True|True|True|True|True|-|True|-|-|0.0148|0.1084|0.8913|-|
+|lgb|-|True|True|True|True|True|True|-|True|-|-|0.0098|0.1025|0.8972|-|
 |lgb|-|True|True|True|True|True|True|-|True|50|-|0.0540|0.1139|0.8858|-|
 |lgb|-|True|True|True|True|True|True|-|True|30|-|0.1066|0.1371|0.8626|-|
 |lgb|-|True|True|True|True|True|True|-|True|16|-|0.1268|0.1638|0.8358|-|
